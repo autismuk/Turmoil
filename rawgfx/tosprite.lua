@@ -1,1 +1,1 @@
-../../images/tosprite.lua
+../../Framework/images/tosprite.lua

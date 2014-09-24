@@ -7,7 +7,7 @@ require("tosprite") 																-- we need this library to make things work.
 --		Set I/O Files. These are where files are stored or accessed when building, relative to where this script is run.
 --
 
-output("../images/")
+output("../source/images/")
 input("static/")
 scale = "@50%"
 
