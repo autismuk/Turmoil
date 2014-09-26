@@ -10,7 +10,7 @@
 --- ************************************************************************************************************************************************************************
 
 require("utils.gui")
-require("utils.soundcontrol")
+require("utils.buttons")
 
 local TitleMain = Framework:createClass("scene.titleScene.main")
 
@@ -60,7 +60,7 @@ function titleScene:preOpen(manager,data,resources)
 	scene:new("gui.text.list", { x = 50, y = 82, listener = nil,
 								 tint = { 1,0.8,0.5}, font = { name = "grapple",size = 40 },key = "channelcount",
 								 items = { "7 Channels","9 Channels","11 Channels","5 Channels"}}):name("channelCount")
-	scene:new("audio.control", { r = 173/255,g = 1,b = 47/255 })
+	scene:new("control.audio", { r = 173/255,g = 1,b = 47/255 })
 	return scene
 end 
 

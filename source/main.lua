@@ -10,7 +10,6 @@
 --- ************************************************************************************************************************************************************************
 
 ApplicationVersion = "v1.0"
-
 display.setStatusBar(display.HiddenStatusBar)													-- hide status bar.
 require("strict")																				-- install strict.lua to track globals etc.
 require("framework.framework")																	-- framework.
