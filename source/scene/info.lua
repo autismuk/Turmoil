@@ -110,7 +110,7 @@ function InfoScene:preOpen(manager,data,resources)
 	scene.m_advertObject = scene:new("ads.admob",adIDs)											-- create a new advert object
 	local headerSpace = scene.m_advertObject:getHeight() 										-- get the advert object height
 	scene:new("scene.infoScene.main",data)
-	scene:new("gui.icon.pulsing", { image = "images/home.png", width = 17, x = 87, y = 87, listener = self, message = "home" })
+	scene:new("control.home", { x = 88, listener = self, message = "home" })
 	return scene
 end 
 
