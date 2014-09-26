@@ -52,15 +52,18 @@ local titleScene = Framework:createClass("scene.titleScene","game.sceneManager")
 function titleScene:preOpen(manager,data,resources)
 	local scene = Framework:new("game.scene") 													-- create a new scene
 	scene:new("scene.titleScene.main",data)														-- add title text
-	scene:new("gui.icon.pulsing", { image = "images/go.png", 									-- add pulsing icon.
-					width = 14, x = 90, y = 90, listener = self, message = "start" })
+--	scene:new("gui.icon.pulsing", { image = "images/go.png", 									-- add pulsing icon.
+--					width = 14, x = 90, y = 90, listener = self, message = "start" })
+
 	scene:new("gui.text.list", { x = 50, y = 68, listener = nil, message = "active" , 			-- add clickable switching text lists
 								 tint = { 1,0.8,0.5 },font = { name = "grapple", size = 40 },key = "startlevel",
 								 items = { "Start at Level 1","Start at Level 5","Start at Level 10"} } ):name("startLevel")
 	scene:new("gui.text.list", { x = 50, y = 82, listener = nil,
 								 tint = { 1,0.8,0.5}, font = { name = "grapple",size = 40 },key = "channelcount",
 								 items = { "7 Channels","9 Channels","11 Channels","5 Channels"}}):name("channelCount")
+
 	scene:new("control.audio", { r = 173/255,g = 1,b = 47/255 })
+	scene:new("control.rightarrow", { x = 88, listener = self, message = "start",r = 173/255,g = 1,b = 47/255 })
 	return scene
 end 
 
