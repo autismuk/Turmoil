@@ -9,7 +9,19 @@
 ---
 --- ************************************************************************************************************************************************************************
 
-ApplicationVersion = "v1.0"
+ApplicationDescription = { 																		-- application description.
+	appName = 		"Turmoil",
+	version = 		"1.0",
+	developers = 	{ "Paul Robson" },
+	email = 		"paul@robsons.org.uk",
+	fqdn = 			"uk.org.robsons.turmoil", 													-- must be unique for each application.
+    admobIDs = 		{ 																			-- admob Identifiers.
+    					ios = "ca-app-pub-8354094658055499/1659828014", 							
+						android = "ca-app-pub-8354094658055499/7706361613" 
+					},
+	showDebug = 	true 																		-- show debug info and adverts.
+}
+
 display.setStatusBar(display.HiddenStatusBar)													-- hide status bar.
 require("strict")																				-- install strict.lua to track globals etc.
 require("framework.framework")																	-- framework.
