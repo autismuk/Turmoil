@@ -11,7 +11,7 @@
 
 ApplicationDescription = { 																		-- application description.
 	appName = 		"Turmoil",
-	version = 		"1.0",
+	version = 		"1.1",
 	developers = 	{ "Paul Robson" },
 	email = 		"paul@robsons.org.uk",
 	fqdn = 			"uk.org.robsons.turmoil", 													-- must be unique for each application.

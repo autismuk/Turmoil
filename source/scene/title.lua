@@ -19,7 +19,7 @@ local TitleMain = Framework:createClass("scene.titleScene.main")
 
 function TitleMain:constructor(info)
 	self.m_group = display.newGroup()															-- put everything in a group
-	local txt = display.newText("v"..ApplicationDescription.version,0,							-- version number bottom left
+	local txt = display.newText(self.m_group,"v"..ApplicationDescription.version,0,				-- version number bottom left
 															0,native.systemFont,12)
 	txt.anchorX,txt.anchorY = 0,0
 	display.newBitmapText(self.m_group,"Turmoil",												-- main text
