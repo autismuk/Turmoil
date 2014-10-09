@@ -19,6 +19,7 @@ ApplicationDescription = { 																		-- application description.
     					ios = "ca-app-pub-8354094658055499/1659828014", 							
 						android = "ca-app-pub-8354094658055499/7706361613" 
 					},
+	advertType = 	"banner",																	-- show banners.
 	showDebug = 	true 																		-- show debug info and adverts.
 }
 
